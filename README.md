@@ -4,7 +4,7 @@ layout: landing
 
 # Dart Language Guide (한국어)
 
-### 다트 공식 문서를 번역한 요약본 입니다.
+## 다트 공식 문서를 번역한 요약본 입니다.
 
 이 페이지에서는 다른 언어로 프로그래밍하는 방법을 이미 알고 있다는 가정 하에 변수 및 연산자에서 클래스와 라이브러리에 이르기까지 각 주요 Dart 기능을 사용하는 방법을 보여줍니다. 언어에 대한 간략한 소개는 [language samples page](https://dart.dev/samples)를 참조하세요.
 
@@ -16,7 +16,7 @@ layout: landing
 
 공식 문서: [https://dart.dev/guides/language/language-tour](https://dart.dev/guides/language/language-tour)
 
-### 연락처
+## 연락처
 
 > 번역과 관련된 문의나 건의는 언제든지 환영입니다.\
 > Email: wnehdtjr5@gmail.com\
