@@ -8,3 +8,20 @@
 **Note:** [DartPad](https://dartpad.dev/)를 사용하면 대부분의 Dart언어 기능을 실행해볼 수 있습니다 ([자세히 알아보기](https://dart.dev/tools/dartpad)).
 {% endhint %}
 
+### A basic Dart program
+
+아래 코드는 Dart의 가장 기본적인 기능을 많이 사용한 코드입니다.
+
+```dart
+// 함수 정의.
+void printInteger(int aNumber) {
+    print('The number is $aNumber.');    // 콘솔 창에 출력.
+}
+
+// 여기에서 앱이 실행되기 시작합니다.
+void main() {
+    var number = 42;    // 변수를 선언하고 초기화합니다.
+    printInteger(number);    // 함수 호출.
+}
+```
+
