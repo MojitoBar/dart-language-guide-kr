@@ -1,0 +1,19 @@
+name: typo
+description: 오타 발견
+labels: ['typo']
+body:
+  - type: textarea
+    id: as-is
+    attributes:
+      label: As is
+      description: 현재 오타가 어디에, 어떻게 있나요?
+    validations:
+      required: true
+  - type: textarea
+    id: to-be
+    attributes:
+      label: To be
+      description: 어떻게 고칠 수 있을까요?
+    validations:
+      required: true
+ 
