@@ -105,7 +105,7 @@ final String nickname = 'Bobby';
 final 변수의 값은 변경할 수 없습니다.
 
 ```dart
-name = 'Alice'; // 에: final 변수는 한 번만 설정할 수 있습니다.
+name = 'Alice'; // 에러: final 변수는 한 번만 설정할 수 있습니다.
 ```
 
 **컴파일 타임 상수**가 될 변수에는 const를 사용하세요. const 변수가 클래스 레벨에 있으면 `static const`로 표시합니다. 변수를 선언할 때, 값을 number 또는 문자열 리터럴, const 변수 또는 상수 숫에 대한 산술 연산 결과와 같은 컴파일 타임 상수로 설정합니다.
@@ -122,3 +122,32 @@ var foo = const [];
 final bar = const [];
 const baz = []; // `const []`와 동일합니다.
 ```
+
+위의 baz와 같이 `const` 선언의 초기화 표현식에서 `const`를 생략할 수 있습니다. 자세한 내용은 [DON’T use const redundantly](https://dart.dev/guides/language/effective-dart/usage#dont-use-const-redundantly) 참조하세요.
+
+`const` 값으로 초기화 했어도 final 또는 const 가 아니라 변수의 값을 변경할 수 있습니다.
+
+```dart
+foo = [1, 2, 3]; // Was const []
+```
+
+`const` 변수의 값은 변경할 수 없습니다.
+
+```dart
+baz = [42]; // 에: 상수 변수에 값을 할당할 수 없습니다.
+```
+
+[type checks and casts](https://dart.dev/guides/language/language-tour#type-test-operators)(`is` 또 `as`), [collection if](https://dart.dev/guides/language/language-tour#collection-operators), [spread operators](https://dart.dev/guides/language/language-tour#spread-operator)(... 또는 ...?)를 사용하여 상수를 정의할 수 있습니다.
+
+```dart
+const Object i = 3; // 여기서 i는 int 값을 가진 const 객체입니다.
+const list = [i as int]; // type casts를 사용.
+const map = {if (i is int) i: 'int'}; // is와 collection if 사용.
+const set = {if (list is List<int>) ...list}; // spread operator 사용.
+```
+
+{% hint style="info" %}
+**Note:** `final` 객체는 수정할 수 없지만 객체의 필드는 변경할 수 있습니다. 그에 비해 `const` 객체는 그 필드도 변경할 수 없습니다.
+{% endhint %}
+
+`const`를 사용하여 상수 값을 만드는 방법에 대한 자세한 내용은 [Lists](https://dart.dev/guides/language/language-tour#lists), [Maps](https://dart.dev/guides/language/language-tour#maps) 및 [Classes](https://dart.dev/guides/language/language-tour#classes)를 참조하세요.

@@ -19,4 +19,4 @@ description: Dart 언어에 대해 배울 때 아래 사실과 개념을 염두�
 * Java와 달리 Dart에는 `public`, `protected` 및 `private` 키워드가 없습니다. 식별자가 밑줄(\_)로 시작하는 경우 해당 라이브러리에 대해 비공개입니다. 자세한 내용은 [Libraries and visibility](https://dart.dev/guides/language/language-tour#libraries-and-visibility) 참조하세요.
 * 식별자는 문자나 밑줄(\_)로 시작하고 그 뒤에 해당 문자와 ​​숫자의 조합이 올 수 있습니다.
 * Dart는 expressions(런타임 값이 있는)과 statements(없는)을 모두 가지고 있습니다. 예를 들어 조건연산자 `조건 ? expr1 : expr2`는 expr1 또는 expr2의 값을 가집니다. 값이 없는 `if-else` 문과 비교됩니다. statements에는 종종 하나 이상의 expressions가 포함되지만 expressions은 statements를 직접 포함할 수 없습니다.
-* Dart 도구는 warnings와 errors라는 두 가지 종류의 문제를 리포트할 수 있습니다. warnings는 코드가 작동하지 않을 수 있다는 표시일 뿐, 프로그램 실행을 방해하지는 않습니다. errors에는 컴파일 에러와 런타임 에러가 있습니다. 컴파일 타임 오류의 경우 코드가 전혀 실행되지 않습니다. 런타임 오류의 경우는 코드가 실행되는 와중에 예외([exception](https://dart.dev/guides/language/language-tour#exceptions))가 발생합니다.
+* Dart 도구는 warnings와 errors라는 두 가지 종류의 문제를 제기할 수 있습니다. warnings는 코드가 작동하지 않을 수 있다는 표시일 뿐, 프로그램 실행을 방해하지는 않습니다. errors에는 컴파일 에러와 런타임 에러가 있습니다. 컴파일 타임 오류의 경우 코드가 전혀 실행되지 않습니다. 런타임 오류의 경우는 코드가 실행되는 와중에 예외([exception](https://dart.dev/guides/language/language-tour#exceptions))가 발생합니다.

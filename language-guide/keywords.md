@@ -22,10 +22,10 @@ description: 다음 표는 Dart 언어가 특별히 다루는 키워드를 나�
 | [do](https://dart.dev/guides/language/language-tour#while-and-do-while)               | [if](https://dart.dev/guides/language/language-tour#if-and-else)                          | [return](https://dart.dev/guides/language/language-tour#functions)                               | [yield](https://dart.dev/guides/language/language-tour#generators) 3                      |
 | [dynamic](https://dart.dev/guides/language/language-tour#important-concepts) 2        | [implements](https://dart.dev/guides/language/language-tour#implicit-interfaces) 2        | [set](https://dart.dev/guides/language/language-tour#getters-and-setters) 2                      |                                                                                           |
 
-이러한 단어를 식별자로 사용하지 마세요. 그러나 필요에 따라 위 첨자(표에 표시된 숫자)로 표시된 키워드는 식별자가 될 수 있습니다.
+이러한 단어를 식별자로 사용하지 마세요. 하지만 필요에 따라 위 첨자(표에 표시된 숫자)로 표시된 키워드는 식별자가 될 수도 있습니다.
 
-* 숫자 1이 있는 단어는 특정 장소에서만 의미가 있는 문맥 키워드입니다. 다른 곳에서는 사용할 수 있습니다.
-* 숫자 2가 있는 단어는 빌트인 식별자입니다. 이러한 키워드는 대부분의 위치에서 유효한 식별자이지만 클래스나 타입 이름 또는 import 접두사로 사용할 수 없습니다.
+* 숫자 1이 있는 단어는 특정 장소에서만 의미가 있는 문맥 키워드입니다. 특정 장소가 아닌 다른 곳에서는 사용할 수 있습니다.
+* 숫자 2가 있는 단어는 빌트인 식별자입니다. 이러한 키워드는 대부분의 위치에서 사용할 수 있지만 클래스나 타입 이름 또는 import 접두사로 사용할 수 없습니다.
 * 숫자 3이 있는 단어는 비동기 지원과 관련된 제한된 예약어입니다. `async`, `async*` 또는 `sync*`로 표시된 함수 본문에서 `await` 또는 `yield`를 식별자로 사용할 수 없습니다.
 
-테이블의 다른 모든 단어는 예약어이며 식별자가 될 수 없습니다.
+숫자가 없는 테이블의 다른 모든 단어는 예약어이며 식별자가 될 수 없습니다.
