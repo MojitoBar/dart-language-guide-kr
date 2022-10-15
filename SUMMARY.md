@@ -8,4 +8,5 @@
 * [Important concepts](language-guide/important-concepts.md)
 * [Keywords](language-guide/keywords.md)
 * [Variables](language-guide/variables.md)
-* [Built-in types](language-guide/built-in-types.md)
+* [Built-in types](language-guide/built-in-types/README.md)
+  * [Numbers](language-guide/built-in-types/numbers.md)
