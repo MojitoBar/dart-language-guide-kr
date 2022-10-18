@@ -58,4 +58,24 @@ multi-line string.""";
 var s = r'In a raw string, not even \n gets special treatment.';
 ```
 
-\
+문자열에서 유니코드 문자를 표현하는 방법에 대한 자세한 내용은 [Runes and grapheme clusters](https://dart.dev/guides/language/language-tour#characters)를 참조하세요.
+
+표현식이 null, 숫자, 문자열, bool 값, 즉 컴파일 타임 상수인 경우 리터럴 문자열은 컴파일 타임 상수입니다.
+
+```dart
+// 이들은 const string에서 사용할 수 있습니다.
+const aConstNum = 0;
+const aConstBool = true;
+const aConstString = 'a constant string';
+
+// 이들은 const string에서 사용할 수 없습니다.
+var aNum = 0;
+var aBool = true;
+var aString = 'a string';
+const aConstList = [1, 2, 3];
+
+const validConstString = '$aConstNum $aConstBool $aConstString';
+// const invalidConstString = '$aNum $aBool $aString $aConstList';
+```
+
+문자열 사용에 대한 자세한 내용은 [문자열 및 정규식](https://dart.dev/guides/libraries/library-tour#strings-and-regular-expressions)을 참조하세요.\
