@@ -10,3 +10,4 @@
 * [Variables](language-guide/variables.md)
 * [Built-in types](language-guide/built-in-types/README.md)
   * [Numbers](language-guide/built-in-types/numbers.md)
+  * [String](language-guide/built-in-types/string.md)
