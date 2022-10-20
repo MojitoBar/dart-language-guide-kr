@@ -12,3 +12,4 @@
   * [Numbers](language-guide/built-in-types/numbers.md)
   * [String](language-guide/built-in-types/string.md)
   * [Booleans](language-guide/built-in-types/booleans.md)
+  * [Lists](language-guide/built-in-types/lists.md)

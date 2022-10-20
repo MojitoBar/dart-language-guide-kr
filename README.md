@@ -12,8 +12,6 @@
 
 공식 문서: [https://dart.dev/guides/language/language-tour](https://dart.dev/guides/language/language-tour)
 
----
-
 > 번역과 관련된 문의나 건의는 언제든지 환영입니다.\
 > Email: wnehdtjr5@gmail.com\
 > Github: [https://github.com/MojitoBar/dart-language-guide-kr](https://github.com/MojitoBar/dart-language-guide-kr)
