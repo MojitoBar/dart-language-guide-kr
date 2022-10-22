@@ -13,3 +13,4 @@
   * [String](language-guide/built-in-types/string.md)
   * [Booleans](language-guide/built-in-types/booleans.md)
   * [Lists](language-guide/built-in-types/lists.md)
+  * [Set](language-guide/built-in-types/set.md)
