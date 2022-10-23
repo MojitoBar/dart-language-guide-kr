@@ -18,3 +18,40 @@ var nobleGases = {
   18: 'argon',
 };
 ```
+
+{% hint style="info" %}
+**Note:** Dart는 `gifts` 타입이 `Map<String, String>`이고 `nobleGases` 타입 `Map<int, String>`이라고 추론합니다. 맵에 잘못된 타입의 값을 추가하려고 하면 컴파일 또는 런타임에서 오류가 발생합니다. 자세한 내용은 [type inference](https://dart.dev/guides/language/type-system#type-inference)에 대해 읽어보세요.
+{% endhint %}
+
+Map 생성자를 사용하여 동일한 객체를 생성할 수 있습니다.
+
+```dart
+var gifts = Map<String, String>();
+gifts['first'] = 'partridge';
+gifts['second'] = 'turtledoves';
+gifts['fifth'] = 'golden rings';
+
+var nobleGases = Map<int, String>();
+nobleGases[2] = 'helium';
+nobleGases[10] = 'neon';
+nobleGases[18] = 'argon';
+```
+
+{% hint style="info" %}
+**Note:** C# 또는 Java와 같은 언어의 경험이 있다면 `Map()` 대신 `new Map()`을 예상할 수 있습니다. Dart에서 `new` 키워드는 선택 사항입니다. 자세한 내용은 [Using constructors](https://dart.dev/guides/language/language-tour#using-constructors)을 참조하세요.
+{% endhint %}
+
+아래 첨자 할당 연산자(`[]=`)를 사용하여 기존 맵에 새 key-value 쌍을 추가합니다.
+
+```dart
+var gifts = {'first': 'partridge'};
+gifts['fourth'] = 'calling birds'; // key-value 쌍을 추가
+```
+
+아래 첨자 연산자(`[]`)를 사용하여 맵에서 값을 검색합니다.
+
+```dart
+var gifts = {'first': 'partridge'};
+assert(gifts['first'] == 'partridge');
+```
+
