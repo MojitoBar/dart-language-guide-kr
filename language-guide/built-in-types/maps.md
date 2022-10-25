@@ -55,3 +55,21 @@ var gifts = {'first': 'partridge'};
 assert(gifts['first'] == 'partridge');
 ```
 
+맵에 없는 키를 찾으면 null이 반환됩니다.
+
+```dart
+var gifts = {'first': 'partridge'};
+assert(gifts['fifth'] == null);
+```
+
+`.length`를 사용하여 맵에서 key-value 쌍의 수를 가져옵니다.
+
+```dart
+var gifts = {'first': 'partridge'};
+gifts['fourth'] = 'calling birds';
+assert(gifts.length == 2);
+```
+
+Maps는 lists와 마찬가지로 스프레드 연산자(`...` 및 `...?`)와 `if` 및 `for` 컬렉션을 지원합니다. 자세한 내용과 예제는 [spread operator proposal](https://github.com/dart-lang/language/blob/master/accepted/2.3/spread-collections/feature-specification.md) 및 [control flow collections proposal](https://github.com/dart-lang/language/blob/master/accepted/2.3/control-flow-collections/feature-specification.md) 을 참조하세요.
+
+맵에 대한 자세한 내용은 [generics](https://dart.dev/guides/language/language-tour#generics) 섹션과 [Maps API](https://dart.dev/guides/libraries/library-tour#maps)에 대한 라이브러리 투어를 참조하세요.
