@@ -15,3 +15,8 @@
   * [Lists](language-guide/built-in-types/lists.md)
   * [Set](language-guide/built-in-types/set.md)
   * [Maps](language-guide/built-in-types/maps.md)
+
+***
+
+* [Functions](functions/README.md)
+  * [Parameters](functions/parameters.md)
