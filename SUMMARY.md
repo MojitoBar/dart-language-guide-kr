@@ -20,3 +20,6 @@
 
 * [Functions](functions/README.md)
   * [Parameters](functions/parameters.md)
+  * [The main() function](functions/the-main-function.md)
+  * [Functions as first-class objects](functions/functions-as-first-class-objects.md)
+  * [Anonymous functions](functions/anonymous-functions.md)
